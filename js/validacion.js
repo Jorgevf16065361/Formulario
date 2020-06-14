@@ -10,3 +10,31 @@ function validar(formulario) {
         formulario.nombre.focus();
         return false;
     }
+    var checkok = "QWERTYUIOPÑLKJHGFDSAZXCVBNM" + "qwertyuiopñlkjhgfdsazxcvbnm";
+    var checkString = formulario.nombre.value;
+
+    alert(checkString);
+
+    var aliValid = true;
+
+    for (var i =0; i < checkString.length; i++) {
+        //charAt nos ayuda a separar una cadena en caracteres
+        var ch = checkString.charAtg(i);
+        for (var j = 0; j <checkok.length; j++)
+        if ( ch == checkok.charAt(j))
+             break;
+        if( j == checkok.length ) {
+            aliValid = false;
+            break;
+        }
+           
+        }
+
+         //debo saber el estado del aliValid
+    if(!aliValid){
+        alert("Escriba solo letras en el campo de Nombre");
+        formulario.nombre.focus();
+        return(false);
+    }
+
+}
