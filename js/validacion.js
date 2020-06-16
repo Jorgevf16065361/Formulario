@@ -8,7 +8,7 @@ function validar(formulario) {
         //realiza un posicionamiento al elemento
 
         formulario.nombre.focus();
-        return false;
+        return (false);
     }
     var checkok = "QWERTYUIOPÑLKJHGFDSAZXCVBNM" + "qwertyuiopñlkjhgfdsazxcvbnm";
     var checkString = formulario.nombre.value;
@@ -42,7 +42,7 @@ function validar(formulario) {
         //focus() nos ayuda a focalizar donde esta el error del llenado 
         //realiza un posicionamiento al elemento
         formulario.edad.focus();
-        return false;
+        return (false);
     }
     
     var checkok = "1234567890";
@@ -77,7 +77,7 @@ function validar(formulario) {
         //realiza un posicionamiento al elemento
 
         formulario.correo.focus();
-        return false;
+        return (false);
 
 
     }
