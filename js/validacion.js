@@ -104,7 +104,7 @@ function validaFecha(ano, mes, dia) {
     var fechaAno = new Date(anoNum,1,1); // Para tener el año a 4 dígitos
     var fechaDate = new Date(anoNum, mesNum, diaNum); // Paso a fmt fecha
     return (fechaAno.getFullYear() == fechaDate.getFullYear() &&
-            mesNum == fechaDate.getMonth()) ? "Año bisiesto" : "Año no bisiesto";
+            mesNum == fechaDate.getMonth()) ? "Fecha correcta" : "fecha incorrecta";
   }
 
   function validar() {
