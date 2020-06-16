@@ -115,3 +115,8 @@ function validaFecha(ano, mes, dia) {
     return false;
   }
 
+  function bisiesto(ano) {
+    if ((ano<1900)||(ano>2100)) return false;
+    return  (((ano % 4 == 0) && (ano % 100 != 0)) || (ano % 400 == 0))
+  }
+
