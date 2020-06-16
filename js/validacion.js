@@ -107,7 +107,7 @@ function validaFecha(ano, mes, dia) {
             mesNum == fechaDate.getMonth()) ? "Fecha correcta" : "fecha incorrecta";
   }
 
-  function validar() {
+  function validarr() {
     var ano = document.getElementById('ano').value ;
     var mes = document.getElementById('mes').value ;
     var dia = document.getElementById('dia').value ;
