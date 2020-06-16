@@ -95,3 +95,23 @@ function validar(formulario) {
     //si b.text(txt) "" es verdadero : sino  "no" falso
     return b.test(txt);
 }
+
+function validaFecha(ano, mes, dia) {
+    var anoNum = parseInt(ano, 10);
+    var mesNum = parseInt(mes, 10)-1;
+    var diaNum = parseInt(dia, 10);
+    if ((anoNum<1900)||(anoNum>2100)) return false;
+    var fechaAno = new Date(anoNum,1,1); // Para tener el año a 4 dígitos
+    var fechaDate = new Date(anoNum, mesNum, diaNum); // Paso a fmt fecha
+    return (fechaAno.getFullYear() == fechaDate.getFullYear() &&
+            mesNum == fechaDate.getMonth()) ? "Año bisiesto" : "Año no bisiesto";
+  }
+
+  function validar() {
+    var ano = document.getElementById('ano').value ;
+    var mes = document.getElementById('mes').value ;
+    var dia = document.getElementById('dia').value ;
+    alert(validaFecha(ano, mes, dia));
+    return false;
+  }
+
