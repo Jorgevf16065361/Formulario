@@ -24,17 +24,17 @@
     <br><br>
     <form action="" onsubmit="validar(); return false;">
           
-            Validar si es año bisiesto (dia, mes y año):
+            Fecha Correcta(fecha incorrecta si febrero tiene mas de 29 dias y mes 13):
             <input id="dia" type="text" value="" size="2" maxlength="2"/>
             <input id="mes" type="text" value="" size="2" maxlength="2"/>
             <input id="ano" type="text" value="" size="4" maxlength="4"/>
             <input type="submit" value="Validar" />
           
         </form>
-
+<br><br>
         <form action="" onsubmit="alert(bisiesto(document.getElementById('anobis').value));return false;">
       
-            Ver si es bisiesto el año:
+            Año bisiesto tru/false(año limite de 1900 a 2100):
             <input id="anobis" type="number" min="1900" max="2100"value="" size="4" maxlength="4"/>
             <input type="submit" value="Comprobar"/>
           
