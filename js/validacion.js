@@ -120,3 +120,49 @@ function validaFecha(ano, mes, dia) {
     return  (((ano % 4 == 0) && (ano % 100 != 0)) || (ano % 400 == 0))
   }
 
+  
+  function porcentaje(){
+
+    var total, sexo, Nhombre=0, Nmujer=0, porcentaje;
+                total= prompt("Cuantas personas hay en el salon?");
+                for(personas=1;personas<=total;personas++){
+                    sexo = prompt("Es hombre o mujer?", "hombre", "mujer");
+                    if(sexo == "hombre"){
+                        Nhombre++;
+                        alert("Se ha añadido un hombre");
+                    }
+                    
+                    if(sexo== "mujer"){
+                        Nmujer++;
+                        alert("Se ha añadido una mujer");
+                    }
+                }//for
+                porcentaje = (Nhombre*100)/total;
+                alert("El porcentaje de hombres es: "+porcentaje+"%");
+                porcentajem = (Nmujer*100)/total;
+                 alert("El porcentaje de mujeres es: "+porcentajem+"%");
+    
+            }
+    
+            function Edad() {
+    
+        var FechaNacimiento = document.getElementById('miEdad').value;
+    
+        var fechaNace = new Date(FechaNacimiento);
+        var fechaActual = new Date()
+    
+        var mes = fechaActual.getMonth();
+        var dia = fechaActual.getDate();
+        var año = fechaActual.getFullYear();
+    
+        fechaActual.setDate(dia);
+        fechaActual.setMonth(mes);
+        fechaActual.setFullYear(año);
+    
+        edad = Math.floor(((fechaActual - fechaNace) / (1000 * 60 * 60 * 24) / 365));
+       
+    
+        alert( 'La edad es: ' + edad + ' Años')
+    
+    }
+
