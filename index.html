@@ -40,5 +40,26 @@
           
         </form>
 
+        <br><br>
+        <form action="" onsubmit="alert(bisiesto(document.getElementById('anobis').value));return false;">
+      
+            Año bisiesto true/false(año limite de 1900 a 2100):
+            <input id="anobis" type="number" min="1900" max="2100"value="" size="4" maxlength="4"/>
+            <input type="submit" value="Comprobar"/>
+          
+        </form>
+<br><br>
+<form action="" onsubmit="porcentaje(this)">
+
+     Porcentaje de H/M desde la cantidad de alumnos(numero cualquiera): <input type="submit" value="porcentaje" />
+<br><br>
+     <form>
+         
+        Obtencion de la edad conforme a(dia, mes, año):<input type='date' id='miEdad'><button type='button' onclick='Edad();'>Calcular Edad</button>
+<p id='Edadcalculada'>
+     </form>
+    
+</form>
+
 </body>
 </html>
