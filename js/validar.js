@@ -16,6 +16,10 @@ function interes() {
     } else {
         alert('no es positivo')
     }
+    var decExp = /^[1-9]\d*(\.\d+)?$/
+    if (!decExp.test(valor)) {
+        alert('Ese valor no esta permitido')
+    }
 }
 
 function borrar1() {
