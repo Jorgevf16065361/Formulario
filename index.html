@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylef.css">
+    <script language="javascript" type="text/javascript" src="js/validacion.js"></script>
+    <title>formularios</title>
+</head>
+<body>
+    <p>Formulario de Registro Basico</p>
+    <h1>Favor de Llenar el Formulario</h1>
+    <form action="" method="get" name="formulario" onsubmit="return validar(this)">
+        <br>
+        Nombre: <input type="text" name="nombre" size="20">
+        <br>
+        Edad: <input type="number" min="00" max="99" name="edad">
+        <br>
+        Email: <input type="email" name="correo" size="30">
+        <br>
+        <input type="submit" value="Enviar Datos" name="enviar">
+        <input type="reset" value="Borrar Datos" name="borrar">
+    </form>
+    <br><br>
+    <form action="" onsubmit="validarr(); return false;">
+          
+            Fecha Correcta(fecha incorrecta si febrero tiene mas de 29 dias y mes 13):
+            <input id="dia" type="text" value="" size="2" maxlength="2"/>
+            <input id="mes" type="text" value="" size="2" maxlength="2"/>
+            <input id="ano" type="text" value="" size="4" maxlength="4"/>
+            <input type="submit" value="Validar" />
+          
+        </form>
+<br><br>
+        <form action="" onsubmit="alert(bisiesto(document.getElementById('anobis').value));return false;">
+      
+            Año bisiesto tru/false(año limite de 1900 a 2100):
+            <input id="anobis" type="number" min="1900" max="2100"value="" size="4" maxlength="4"/>
+            <input type="submit" value="Comprobar"/>
+          
+        </form>
+
+        
+<br><br>
+<form action="" onsubmit="porcentaje(this)">
+
+     Porcentaje de H/M desde la cantidad de alumnos(numero cualquiera): <input type="submit" value="porcentaje" />
+<br><br>
+     <form>
+         
+        Obtencion de la edad conforme a(dia, mes, año):<input type='date' id='miEdad'><button type='button' onclick='Edad();'>Calcular Edad</button>
+<p id='Edadcalculada'>
+    
+</form>
+<br>
+<br>
+<center>
+    <a href="funciones.html"  title="Funciones">Funciones</a>
+    </center>
+</body>
+</html>

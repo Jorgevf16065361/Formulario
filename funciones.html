@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <p>Se le ha encargado realizar un formulario para el calculo de interés de un prestamo bancario ingresando el montoy los meses a invertir, siendo que es un 2% de interés mensual.</p>
+
+    <script src="js/validar.js"></script>
+
+    <form action="" method="post" name="formulario">
+        <br>
+        <table align="center" border="1">
+            <td align="left" width="100">
+                Introduce la cantidad a invertir: $
+            </td>
+
+            <td align="center" width="150">
+                <input type="text" name="cantidad" onkeypress="return validarn(event)" maxlength="10">
+            </td>
+            <tr>
+                <td></td>
+                <td align="center" width="150">
+                    <input type="button" value="Calcula Interes" name="enviar" onclick="interes()">
+                </td>
+            </tr>
+            <tr>
+                <td align="left" width="100">
+                    Su saldo total con interés al 2% es de:
+                </td>
+                <td align="center" width="150">
+                    <input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" name="borrar" value="Borrar" onclick="borrar1()">
+                </td>
+            </tr>
+
+            
+
+
+        </table>
+
+    </form>
+    <br>
+    <br>
+    <center>
+        <a href="index.html"  title="Formulario">Regresar al Formulario</a>
+        </center>
+</body>
+
+</html>
